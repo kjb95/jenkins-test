@@ -1,41 +1,31 @@
 version: '3'
 services:
-  jenkins:
+  mariadb:
+    image: mariadb:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    restart: always
+  backend.com:
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://mariadb:3306/movie_rank_chart
     build:
       context: .
-      dockerfile: jenkins/Dockerfile
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./jenkins/volume:/var/jenkins_home
+      dockerfile: backend/Dockerfile
     ports:
-      - "8082:8080"
-    user: root
-#  mariadb:
-#    image: mariadb:latest
-#    ports:
-#      - "3306:3306"
-#    volumes:
-#      - ./db:/var/lib/mysql
-#    restart: always
-#  backend.com:
-#    environment:
-#      SPRING_DATASOURCE_URL: jdbc:mariadb://mariadb:3306/movie_rank_chart
-#    build:
-#      context: .
-#      dockerfile: backend/Dockerfile
-#    ports:
-#      - "8080:8080"
-#    depends_on:
-#      - mariadb
-#    tty: true
-#    restart: always
-#  frontend.com:
-#    build:
-#      context: .
-#      dockerfile: frontend/Dockerfile
-#    ports:
-#      - "80:80"
-#    depends_on:
-#      - backend.com
-#    tty: true
-#    restart: always
+      - "8080:8080"
+    depends_on:
+      - mariadb
+    tty: true
+    restart: always
+  frontend.com:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend.com
+    tty: true
+    restart: always
