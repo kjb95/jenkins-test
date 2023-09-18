@@ -21,5 +21,3 @@ COPY ./frontend/default.conf ./frontend/default.conf
 COPY ./frontend/dist ./frontend/dist
 
 COPY ./docker-compose.yml ./docker-compose.yml
-
-RUN docker-compose up
