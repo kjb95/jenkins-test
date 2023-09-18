@@ -21,3 +21,5 @@ COPY ./frontend/default.conf ./frontend/default.conf
 COPY ./frontend/dist ./frontend/dist
 
 COPY ./docker-compose.yml ./docker-compose.yml
+
+CMD ["docker", "compose", "up", "--build"]
