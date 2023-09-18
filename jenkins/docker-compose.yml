@@ -1,0 +1,17 @@
+version: '3'
+services:
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./volume:/var/jenkins_home
+    ports:
+      - "8082:8080"
+    user: root
+networks:
+  default:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: 1500

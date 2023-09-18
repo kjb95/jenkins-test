@@ -1,5 +1,5 @@
 *.properties
-jenkins/
+jenkins/volume
 ./frontend/.env
 ./frontend/.env-local
 ./frontend/.env-local
