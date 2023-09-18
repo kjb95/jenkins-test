@@ -1,5 +1,9 @@
 FROM ubuntu:latest
+USER root
 WORKDIR /app
+
+RUN apt-get update
+RUN apt-get remove docker-ce
 
 RUN apt-get update && apt-get install sudo && \
     apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common && \
