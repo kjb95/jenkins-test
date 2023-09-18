@@ -12,11 +12,11 @@ RUN groupadd -f docker
 
 COPY ./db /app/db
 
-CMD mkdir backend
+RUN mkdir backend
 COPY ./backend/build/libs/movierankchart-0.0.1-SNAPSHOT.jar ./backend/app.jar
 COPY ./backend/Dockerfile ./backend/Docekrfile
 
-CMD mkdir frontend
+RUN mkdir frontend
 COPY ./frontend/default.conf ./frontend/default.conf
 COPY ./frontend/dist ./frontend/dist
 
