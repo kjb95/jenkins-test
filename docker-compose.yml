@@ -10,9 +10,7 @@ services:
   backend.com:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mariadb://mariadb:3306/movie_rank_chart
-    build:
-      context: .
-      dockerfile: backend/Dockerfile
+    image: kjb95/movie-rank-chart-backend:1.0
     ports:
       - "8080:8080"
     depends_on:
@@ -20,9 +18,7 @@ services:
     tty: true
     restart: always
   frontend.com:
-    build:
-      context: .
-      dockerfile: frontend/Dockerfile
+    image: kjb95/movie-rank-chart-frontend:1.0
     ports:
       - "80:80"
     depends_on:

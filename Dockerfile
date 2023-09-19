@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install sudo && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && \
     apt-get update && \
-    apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
+    apt-get install -y docker docker-ce docker-ce-cli containerd.io docker-compose
+
+sudo curl -L "https://github.com/docker/compose/releases/download/2.21.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 RUN groupadd -f docker
 
