@@ -16,9 +16,10 @@ public class CicdController {
 
     @GetMapping("/profile")
     public String getProfile() {
-        return "hihi";
-//        return Arrays.stream(environment.getActiveProfiles())
-//                .findFirst()
-//                .orElse("");
+        String s = Arrays.stream(environment.getActiveProfiles())
+                .findFirst()
+                .orElse("");
+        System.out.println("s = : " + s);
+        return s;
     }
 }
