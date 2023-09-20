@@ -16,8 +16,9 @@ public class CicdController {
 
     @GetMapping("/profile")
     public String getProfile() {
-        return Arrays.stream(environment.getActiveProfiles())
-                .findFirst()
-                .orElse("");
+        return "hihi";
+//        return Arrays.stream(environment.getActiveProfiles())
+//                .findFirst()
+//                .orElse("");
     }
 }
