@@ -1,0 +1,130 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v2.7.7-SNAPSHOT)
+
+2023-09-19 20:00:12.328  INFO 76020 --- [           main] m.MovierankchartApplication              : Starting MovierankchartApplication using Java 17.0.8 on gimjinbeom-ui-MacBookPro.local with PID 76020 (/Users/gimjinbeom/jenkins/project/backend/build/libs/movierankchart-0.0.1-SNAPSHOT.jar started by gimjinbeom in /Users/gimjinbeom/jenkins/project/backend)
+2023-09-19 20:00:12.330  INFO 76020 --- [           main] m.MovierankchartApplication              : The following 1 profile is active: "prod_v1"
+2023-09-19 20:00:12.832  INFO 76020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-19 20:00:12.922  INFO 76020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2023-09-19 20:00:13.379  INFO 76020 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-19 20:00:13.386  INFO 76020 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-19 20:00:13.386  INFO 76020 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-09-19 20:00:13.434  INFO 76020 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-19 20:00:13.434  INFO 76020 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1070 ms
+2023-09-19 20:00:13.457 DEBUG 76020 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, filterRegistrationBean urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, hiddenHttpMethodFilter urls=[/*] order=-10000, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtFilter urls=[/*] order=2147483647
+2023-09-19 20:00:13.457 DEBUG 76020 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2023-09-19 20:00:13.530  INFO 76020 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-19 20:00:13.557  INFO 76020 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-09-19 20:00:13.646  INFO 76020 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-19 20:00:13.692  INFO 76020 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-19 20:00:13.737  INFO 76020 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-19 20:00:13.749  INFO 76020 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB53Dialect
+2023-09-19 20:00:14.135  INFO 76020 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-19 20:00:14.138  INFO 76020 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-19 20:00:14.885 DEBUG 76020 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 17 mappings in 'requestMappingHandlerMapping'
+2023-09-19 20:00:14.941 DEBUG 76020 --- [           main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws] in 'stompWebSocketHandlerMapping'
+2023-09-19 20:00:14.971 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	m.w.c.WebSocketController:
+	{[MESSAGE],[/send-message/{chatRoomId}]}: handleSendMessage(String,SendMessageRequestDto,Principal)
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	m.s.c.RefreshTokenController:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	m.d.u.c.UsersController:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	m.d.m.c.MovieRankController:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	m.d.m.c.MoviesController:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	m.d.m.c.MovieOpenApiHistoryController:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	s.d.o.w.OpenApiControllerWebMvc:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	s.d.s.w.ApiResourceController:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	s.d.s.w.Swagger2ControllerWebMvc:
+	
+2023-09-19 20:00:14.972 DEBUG 76020 --- [           main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2023-09-19 20:00:15.099 DEBUG 76020 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2023-09-19 20:00:15.117 DEBUG 76020 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2023-09-19 20:00:15.123  INFO 76020 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@538a2f0e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d2708a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@2416c658, org.springframework.security.web.header.HeaderWriterFilter@6c9b44bf, org.springframework.web.filter.CorsFilter@508ad266, org.springframework.security.web.authentication.logout.LogoutFilter@1a1f79ce, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@45037e16, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2f2e4bde, movierankchart.security.filter.JwtFilter@51671b08, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72465eb2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2313db84, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@570a62a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ee5632d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@216372b7, org.springframework.security.web.session.SessionManagementFilter@191a0351, org.springframework.security.web.access.ExceptionTranslationFilter@73a6cc79, org.springframework.security.web.access.intercept.AuthorizationFilter@2589d787]
+2023-09-19 20:00:15.162 DEBUG 76020 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-09-19 20:00:15.183 DEBUG 76020 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-09-19 20:00:15.204  INFO 76020 --- [           main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2023-09-19 20:00:15.213  INFO 76020 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2023-09-19 20:00:15.295  INFO 76020 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-19 20:00:15.408 DEBUG 76020 --- [           main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2023-09-19 20:00:15.408 DEBUG 76020 --- [           main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2023-09-19 20:00:15.408  INFO 76020 --- [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2023-09-19 20:00:15.408 DEBUG 76020 --- [           main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]
+2023-09-19 20:00:15.408 DEBUG 76020 --- [           main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]
+2023-09-19 20:00:15.408  INFO 76020 --- [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]]
+2023-09-19 20:00:15.408  INFO 76020 --- [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2023-09-19 20:00:15.408 DEBUG 76020 --- [           main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2023-09-19 20:00:15.408 DEBUG 76020 --- [           main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2023-09-19 20:00:15.414  INFO 76020 --- [           main] m.MovierankchartApplication              : Started MovierankchartApplication in 3.322 seconds (JVM running for 3.674)
+2023-09-19 20:00:15.472  INFO 76020 --- [MessageBroker-2] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=saveMovieRankRecentDailyJob]] launched with the following parameters: [{currentTime=1695121215437}]
+2023-09-19 20:00:15.498  INFO 76020 --- [MessageBroker-2] o.s.batch.core.job.SimpleStepHandler     : Executing step: [saveMovieRankTotalDailyStep]
+2023-09-19 20:00:15.543 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [365849c3] HTTP GET http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=ad8299871f4cd99a36aaa71a52e062b1&targetDt=20230911
+2023-09-19 20:00:15.602 ERROR 76020 --- [MessageBroker-2] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2023-09-19 20:00:16.167 DEBUG 76020 --- [ctor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [365849c3] [ce6bf111-1, L:/10.212.134.155:54113 - R:www.kobis.or.kr/210.104.16.53:80] Response 200 OK
+2023-09-19 20:00:16.191 DEBUG 76020 --- [ctor-http-nio-2] o.s.core.codec.StringDecoder             : [365849c3] [ce6bf111-1, L:/10.212.134.155:54113 - R:www.kobis.or.kr/210.104.16.53:80] Decoded "{"boxOfficeResult":{"boxofficeType":"일별 박스오피스","showRange":"20230911~20230911","dailyBoxOfficeList": (truncated)..."
+2023-09-19 20:00:16.235 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [7566d7e4] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%EC%9E%A0
+2023-09-19 20:00:17.105 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [7566d7e4] [ca8c5af0-1, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.117 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [7566d7e4] [ca8c5af0-1, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"잠","TotalCount":68,"Data":[{"CollName":"kmdb_new2","TotalCount":68,"Count" (truncated)..."
+2023-09-19 20:00:17.171 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [170110f7] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%ED%83%80%EA%B2%9F
+2023-09-19 20:00:17.189 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [170110f7] [ca8c5af0-2, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.195 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [170110f7] [ca8c5af0-2, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"타겟","TotalCount":32,"Data":[{"CollName":"kmdb_new2","TotalCount":32,"Count (truncated)..."
+2023-09-19 20:00:17.219 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [45e3dfde] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%EB%B0%80%EC%88%98
+2023-09-19 20:00:17.246 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [45e3dfde] [ca8c5af0-3, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.252 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [45e3dfde] [ca8c5af0-3, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"밀수","TotalCount":5,"Data":[{"CollName":"kmdb_new2","TotalCount":5,"Count": (truncated)..."
+2023-09-19 20:00:17.361  INFO 76020 --- [MessageBroker-2] o.s.batch.core.step.AbstractStep         : Step: [saveMovieRankTotalDailyStep] executed in 1s863ms
+2023-09-19 20:00:17.379  INFO 76020 --- [MessageBroker-2] o.s.batch.core.job.SimpleStepHandler     : Executing step: [saveMovieRankKoreanDailyStep]
+2023-09-19 20:00:17.383 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [29109077] HTTP GET http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=ad8299871f4cd99a36aaa71a52e062b1&targetDt=20230911&repNationCd=K
+2023-09-19 20:00:17.693 DEBUG 76020 --- [ctor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [29109077] [ce6bf111-2, L:/10.212.134.155:54113 - R:www.kobis.or.kr/210.104.16.53:80] Response 200 OK
+2023-09-19 20:00:17.695 DEBUG 76020 --- [ctor-http-nio-2] o.s.core.codec.StringDecoder             : [29109077] [ce6bf111-2, L:/10.212.134.155:54113 - R:www.kobis.or.kr/210.104.16.53:80] Decoded "{"boxOfficeResult":{"boxofficeType":"일별 박스오피스","showRange":"20230911~20230911","dailyBoxOfficeList": (truncated)..."
+2023-09-19 20:00:17.715 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [43072098] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%EC%9E%A0
+2023-09-19 20:00:17.743 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [43072098] [ca8c5af0-4, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.754 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [43072098] [ca8c5af0-4, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"잠","TotalCount":68,"Data":[{"CollName":"kmdb_new2","TotalCount":68,"Count" (truncated)..."
+2023-09-19 20:00:17.789 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [4baeaff] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%ED%83%80%EA%B2%9F
+2023-09-19 20:00:17.804 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [4baeaff] [ca8c5af0-5, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.812 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [4baeaff] [ca8c5af0-5, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"타겟","TotalCount":32,"Data":[{"CollName":"kmdb_new2","TotalCount":32,"Count (truncated)..."
+2023-09-19 20:00:17.830 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [369a711] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%EB%B0%80%EC%88%98
+2023-09-19 20:00:17.856 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [369a711] [ca8c5af0-6, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.860 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [369a711] [ca8c5af0-6, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"밀수","TotalCount":5,"Data":[{"CollName":"kmdb_new2","TotalCount":5,"Count": (truncated)..."
+2023-09-19 20:00:17.884 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [4b3259b8] HTTP GET http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?ServiceKey=84P0XVN9F21UFE0P5K6H&collection=kmdb_new2&title=%EC%95%88%EB%85%95,%20%EB%82%B4%EC%9D%BC%20%EB%98%90%20%EB%A7%8C%EB%82%98
+2023-09-19 20:00:17.906 DEBUG 76020 --- [ctor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [4b3259b8] [ca8c5af0-7, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Response 200 OK
+2023-09-19 20:00:17.911 DEBUG 76020 --- [ctor-http-nio-3] o.s.core.codec.StringDecoder             : [4b3259b8] [ca8c5af0-7, L:/10.212.134.155:54114 - R:api.koreafilm.or.kr/210.124.107.221:80] Decoded "<EOL><EOL>{"Query":"","KMAQuery":"안녕 내일 또 만나 안녕,","TotalCount":1,"Data":[{"CollName":"kmdb_new2","TotalCount (truncated)..."
+2023-09-19 20:00:17.973  INFO 76020 --- [MessageBroker-2] o.s.batch.core.step.AbstractStep         : Step: [saveMovieRankKoreanDailyStep] executed in 594ms
+2023-09-19 20:00:17.985  INFO 76020 --- [MessageBroker-2] o.s.batch.core.job.SimpleStepHandler     : Executing step: [saveMovieRankForeignDailyStep]
+2023-09-19 20:00:17.990 DEBUG 76020 --- [MessageBroker-2] o.s.w.r.f.client.ExchangeFunctions       : [5c150a32] HTTP GET http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=ad8299871f4cd99a36aaa71a52e062b1&targetDt=20230911&repNationCd=F
+2023-09-19 20:00:18.423 DEBUG 76020 --- [ctor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [5c150a32] [ce6bf111-3, L:/10.212.134.155:54113 - R:www.kobis.or.kr/210.104.16.53:80] Response 200 OK
+2023-09-19 20:00:18.425 DEBUG 76020 --- [ctor-http-nio-2] o.s.core.codec.StringDecoder             : [5c150a32] [ce6bf111-3, L:/10.212.134.155:54113 - R:www.kobis.or.kr/210.104.16.53:80] Decoded "{"boxOfficeResult":{"boxofficeType":"일별 박스오피스","showRange":"20230911~20230911","dailyBoxOfficeList": (truncated)..."
+2023-09-19 20:00:18.534  INFO 76020 --- [MessageBroker-2] o.s.batch.core.step.AbstractStep         : Step: [saveMovieRankForeignDailyStep] executed in 549ms
+2023-09-19 20:00:18.608  INFO 76020 --- [MessageBroker-2] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=saveMovieRankRecentDailyJob]] completed with the following parameters: [{currentTime=1695121215437}] and the following status: [COMPLETED] in 3s57ms
+2023-09-19 20:01:14.956  INFO 76020 --- [MessageBroker-3] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 5, active threads = 1, queued tasks = 2, completed tasks = 2]
+2023-09-19 20:02:29.951 DEBUG 76020 --- [ionShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2023-09-19 20:02:29.952 DEBUG 76020 --- [ionShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2023-09-19 20:02:29.952  INFO 76020 --- [ionShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2023-09-19 20:02:29.952  INFO 76020 --- [ionShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]]
+2023-09-19 20:02:29.952 DEBUG 76020 --- [ionShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]
+2023-09-19 20:02:29.952 DEBUG 76020 --- [ionShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4052913c]
+2023-09-19 20:02:29.952  INFO 76020 --- [ionShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2023-09-19 20:02:29.953 DEBUG 76020 --- [ionShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2023-09-19 20:02:29.953 DEBUG 76020 --- [ionShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2023-09-19 20:02:34.066  INFO 76020 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-19 20:02:34.070  INFO 76020 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-19 20:02:34.091  INFO 76020 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

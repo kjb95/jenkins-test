@@ -1,6 +1,5 @@
 package movierankchart.domain.movies.controller;
 
-import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import movierankchart.domain.movies.constants.MoviesErrorMessage;
 import movierankchart.domain.movies.dto.request.FindMoviesRequestDto;
@@ -19,7 +18,6 @@ import javax.validation.Valid;
 public class MoviesController {
     private final MoviesService moviesService;
 
-    @Operation(summary = "영화 조회")
     @GetMapping
     public ResponseEntity<FindMoviesResponseDtos> findMovies(@Valid FindMoviesRequestDto findMoviesRequestDto) {
         if (findMoviesRequestDto.getId() == null && (findMoviesRequestDto.getTitle() == null || findMoviesRequestDto.getIsConsiderSomeoneChatroom() == null)) {

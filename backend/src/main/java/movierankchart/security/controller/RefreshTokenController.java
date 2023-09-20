@@ -1,6 +1,5 @@
 package movierankchart.security.controller;
 
-import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import movierankchart.common.utils.CookieUtils;
 import movierankchart.security.constants.TokenStatus;
@@ -24,7 +23,6 @@ public class RefreshTokenController {
     private final RefreshTokenService refreshTokenService;
     private final TokenProviderService tokenProviderService;
 
-    @Operation(summary = "리프레시 토큰 삭제")
     @DeleteMapping
     public ResponseEntity<Void> deleteRefreshToken(HttpServletRequest request, HttpServletResponse response) {
         String refreshToken = CookieUtils.getCookie(request, TokenType.REFRESH_TOKEN.getName());
@@ -34,7 +32,6 @@ public class RefreshTokenController {
                 .build();
     }
 
-    @Operation(summary = "액세스 토큰 발급")
     @PostMapping("/access-token")
     public ResponseEntity<CreateAccessTokenResponseDto> createAccessToken(HttpServletRequest request) {
         String refreshToken = CookieUtils.getCookie(request, TokenType.REFRESH_TOKEN.getName());

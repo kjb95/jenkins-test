@@ -1,6 +1,5 @@
 package movierankchart.domain.users.controller;
 
-import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import movierankchart.domain.users.dto.request.UpdateUserChatRoomRequestDto;
 import movierankchart.domain.users.dto.response.FindUsersResponseDto;
@@ -19,14 +18,12 @@ import javax.validation.Valid;
 public class UsersController {
     private final UsersService usersService;
 
-    @Operation(summary = "채팅방에 유저 입장 or 나가기")
     @PatchMapping("/{usersId}")
     public ResponseEntity<Void> updateUserChatRoom(@PathVariable Long usersId, @Valid @RequestBody UpdateUserChatRoomRequestDto updateUserChatRoomRequestDto) {
         usersService.updateUserChatRoom(usersId, updateUserChatRoomRequestDto);
         return ResponseEntity.ok().build();
     }
 
-    @Operation(summary = "유저 조회")
     @GetMapping
     public ResponseEntity<FindUsersResponseDto> findUsers() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

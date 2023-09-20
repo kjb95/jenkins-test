@@ -18,5 +18,10 @@ RUN apt-get update && \
                           apt-get update && \
                           apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-                      RUN groupadd -f docker
+                      RUN groupadd -f docker \
+RUN apt-get install sudo
+RUN sudo apt-get install -y snapd
+RUN sudo apt-get update && sudo apt-get install -yqq daemonize dbus-user-session fontconfig
+RUN sudo daemonize /usr/bin/unshare --fork --pid --mount-proc /lib/systemd/systemd --system-unit=basic.target
+RUN sudo apt-get install -y vim
 RUN usermod -aG docker jenkins
