@@ -2,6 +2,14 @@ FROM jenkins/jenkins:lts
 USER root
 
 RUN apt-get update
+RUN apt-get install -y sudo
+RUN sudo apt-get update && sudo apt-get install -yqq daemonize dbus-user-session fontconfig
+RUN  sudo daemonize /usr/bin/unshare --fork --pid --mount-proc /lib/systemd/systemd --system-unit=basic.target
+RUN exec sudo nsenter -t $(pidof systemd) -a su - $LOGNAME
+RUN sudo apt update
+RUN sudo apt install snapd
+
+RUN apt-get update
 RUN apt-get remove docker-ce
 
 RUN apt-get update && \
